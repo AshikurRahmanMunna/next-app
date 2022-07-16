@@ -14,3 +14,87 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.menu-bar {
+  background: black;
+  margin: 0 auto;
+  height: 80px;
+}
+.menu-bar ul {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.menu-bar ul li {
+  list-style: none;
+}
+.menu-bar ul li a {
+  color: white;
+  padding: 30px;
+  transition: all .3s ease-in-out;
+}
+.menu-bar ul li a:hover {
+  background: white;
+  color: black;
+}
+
+.blog {
+  margin: 20px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin-bottom: 30px;
+  background: white;
+  box-shadow: 10px 5px 20px rgb(196, 196, 196);
+  border-radius: 20px;
+}
+.blog-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 162, 255);
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.blog-text {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  padding-left: 20px;
+}
+.blog:hover .blog-text {
+  color: rgb(0, 162, 255);
+}
+.blog.details {
+  display: block;
+  padding: 20px;
+}
+.blog.details .top {
+  display: flex;
+  align-items: center;
+}
+.blog.details .blog-number {
+  margin: 0;
+  padding: 0;
+}
+.blog.details .blog-text {
+  padding: 0;
+  margin: 0;
+}
+.blog.details .blog-text h3 {
+  margin: 0;
+  padding: 30px 0 30px 20px;
+}
+.blog.details:hover .blog-text h3 {
+  color: rgb(0, 162, 255);
+}
+.blog.details p {
+  margin: 0 0 0 70px;
+}
+.blog.details:hover .blog-text p {
+  color: black;
+}
